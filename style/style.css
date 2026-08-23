@@ -8,10 +8,11 @@
 
 /*imagen de fondo para la web*/
 body {
+    min-height: 100vh;
     background-image: url(../img/fondo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
 
 h1 {
@@ -177,11 +178,11 @@ main img {
 }
 
 footer {
+    width: 100%;
+    margin-top: auto;
     background: linear-gradient(transparent, black);
     padding: 20px 20px;
     text-align: center;
-    height: 65px;
-
 }
 
 /*modificaciones apartir de px*/
