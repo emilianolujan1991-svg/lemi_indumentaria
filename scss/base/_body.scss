@@ -1,0 +1,12 @@
+
+/*imagen de fondo para la web*/
+body {
+    min-height: 100vh;
+    position: relative;
+    background-image: url(../img/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+

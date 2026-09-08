@@ -1,0 +1,163 @@
+@use "../utilities/variables" as v;
+
+/*navbar*/
+.barra {
+    background: linear-gradient(black, transparent);
+
+}
+
+.boton {
+    background-color: v.$colorbarras;
+    box-shadow: v.$color-box-transparente;
+}
+
+.seccion {
+    background-color: v.$colorbarras;
+    box-shadow: v.$color-box-transparente;
+
+}
+
+.texto {
+    color: v.$colorletra;
+}
+
+.logo {
+    filter: drop-shadow(v.$color-box-transparente);
+}
+
+/*modificacion del carrusel*/
+.carrusel-c {
+    box-shadow: v.$color-box-transparente;
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    max-width: 450px;
+    grid-area: fotos;
+}
+
+
+
+/*texto de la descripcion*/
+span {
+    color: rgb(159, 60, 60);
+    text-shadow: 0 0 2px black;
+    text-decoration: underline;
+    font-family: v.$letraprimaria;
+}
+
+
+.combinados {
+    font-family: v.$letradetalle;
+    color: v.$colorletra2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 0;
+    background-color: v.$colorsecundario;
+    box-shadow: v.$color-box-transparente;
+    border-radius: 0 20px 0 20px;
+    grid-area: texto;
+
+}
+
+
+nav {
+    ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+    li {
+    list-style: none;
+    color: v.$colorletra2;
+    font-family: v.$letraprimaria;
+
+
+
+    a {
+    text-decoration: none;
+    color: v.$colorsecundario;
+}
+    }
+}
+}
+
+/* bloque para los modelos de camisetas*/
+.modelos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(5, 0, 0, 0.498);
+    backdrop-filter: blur(16px);
+}
+
+/* contenedor para celular*/
+.contenedor {
+
+    background-color: rgba(0, 0, 0, 0.486);
+    backdrop-filter: blur(16px);
+    box-shadow: v.$color-box-transparente;
+    padding: 2rem;
+    border-radius: 0 20px;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "texto"
+        "fotos";
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*Editar las imagenes de los modelos*/
+.contenedor img {
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: v.$color-box-transparente;
+}
+
+/*texto de los modelos*/
+.detalle-camisetas {
+    font-family: v.$letradetalle;
+    text-align: center;
+    color: v.$colorletra2;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+/*logo en pagina de inicio*/
+.lemi {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    background: linear-gradient(black, transparent);
+    object-fit: cover;
+}
+
+main img {
+    object-fit: cover;
+}
+
+/*modificaciones apartir de px*/
+@media (min-width: 738px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "texto fotos";
+        padding: 4rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
