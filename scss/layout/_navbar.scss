@@ -6,10 +6,7 @@
 
 }
 
-.boton {
-    background-color: v.$colorbarras;
-    box-shadow: v.$color-box-transparente;
-}
+
 
 .seccion {
     background-color: v.$colorbarras;
@@ -67,26 +64,26 @@ span {
 
 nav {
     ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
 
 
-    li {
-    list-style: none;
-    color: v.$colorletra2;
-    font-family: v.$letraprimaria;
+        li {
+            list-style: none;
+            color: v.$colorletra2;
+            font-family: v.$letraprimaria;
 
 
 
-    a {
-    text-decoration: none;
-    color: v.$colorsecundario;
-}
+            a {
+                text-decoration: none;
+                color: v.$colorsecundario;
+            }
+        }
     }
-}
 }
 
 /* bloque para los modelos de camisetas*/

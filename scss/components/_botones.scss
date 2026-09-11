@@ -1,6 +1,12 @@
+@use "../utilities/variables" as v;
 
-
-.flecha-c{
+.flecha-c {
     background-color: black;
     border-radius: 0 5px;
+}
+
+
+.boton {
+    background-color: v.$colorbarras;
+    box-shadow: v.$color-box-transparente;
 }
