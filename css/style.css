@@ -133,7 +133,7 @@ nav ul li a {
 }
 
 /*texto de los modelos*/
-.detalle-camisetas {
+.detalle-pagina {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   color: rgb(213, 235, 255);
@@ -177,13 +177,51 @@ main img {
 }
 
 footer {
-  position: absolute;
-  bottom: 0px;
+  background: rgba(0, 0, 0, 0.678);
   width: 100%;
-  margin-top: auto;
-  background: linear-gradient(transparent, black);
   padding: 20px 20px;
   text-align: center;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.titulo-card {
+  font-size: 3rem;
+}
+
+.orden-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.486);
+  backdrop-filter: blur(16px);
+  box-shadow: 5px 5px 5px black;
+  padding: 2rem;
+  border-radius: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h2 {
+  color: rgb(213, 235, 255);
+}
+
+.p-card {
+  color: rgb(213, 235, 255);
+}
+
+.flecha-c {
+  background-color: black;
+  border-radius: 0 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
