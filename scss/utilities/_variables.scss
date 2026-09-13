@@ -19,3 +19,18 @@ $letraprimaria: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 $letrasecundaria:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 $letradetalle:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+/* extend */
+
+%fondo-boton{
+        background-color: #61605fa8;
+        box-shadow: 5px 5px 5px black;
+}
+
+/* mixins*/
+
+@mixin flex-align {
+    display: flex;
+    align-items: center;
+}

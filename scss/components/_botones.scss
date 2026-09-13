@@ -7,6 +7,5 @@
 
 
 .boton {
-    background-color: v.$colorbarras;
-    box-shadow: v.$color-box-transparente;
+        @extend %fondo-boton;
 }

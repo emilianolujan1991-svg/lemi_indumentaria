@@ -1,6 +1,8 @@
 /*imagen de fondo para la web*/
 body {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-image: url(../img/fondo.jpeg);
   background-repeat: no-repeat;
@@ -18,6 +20,13 @@ body {
 
 /* definiciones de variables para colores*/
 /* variable de ipografias */
+/* extend */
+.boton, .seccion {
+  background-color: rgba(97, 96, 95, 0.6588235294);
+  box-shadow: 5px 5px 5px black;
+}
+
+/* mixins*/
 h1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
@@ -29,11 +38,6 @@ h1 {
 /*navbar*/
 .barra {
   background: linear-gradient(black, transparent);
-}
-
-.seccion {
-  background-color: rgba(97, 96, 95, 0.6588235294);
-  box-shadow: 5px 5px 5px black;
 }
 
 .texto {
@@ -81,9 +85,9 @@ span {
 
 nav ul {
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 20px;
 }
 nav ul li {
@@ -99,8 +103,8 @@ nav ul li a {
 /* bloque para los modelos de camisetas*/
 .modelos {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   background-color: rgba(5, 0, 0, 0.498);
   backdrop-filter: blur(16px);
 }
@@ -146,6 +150,9 @@ nav ul li a {
   object-fit: cover;
 }
 
+main {
+  flex: 1;
+}
 main img {
   object-fit: cover;
 }
@@ -174,7 +181,7 @@ main img {
 footer {
   background: rgba(0, 0, 0, 0.678);
   width: 100%;
-  padding: 20px 20px;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -203,7 +210,7 @@ footer {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in;
 }
 
 h2 {
@@ -217,11 +224,6 @@ h2 {
 .flecha-c {
   background-color: black;
   border-radius: 0 5px;
-}
-
-.boton {
-  background-color: rgba(97, 96, 95, 0.6588235294);
-  box-shadow: 5px 5px 5px black;
 }
 
 /*# sourceMappingURL=style.css.map */

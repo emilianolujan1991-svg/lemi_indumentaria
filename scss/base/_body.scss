@@ -2,11 +2,14 @@
 /*imagen de fondo para la web*/
 body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-image: url(../img/fondo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: black;
+
 }
 

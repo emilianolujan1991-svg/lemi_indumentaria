@@ -6,12 +6,8 @@
 
 }
 
-
-
 .seccion {
-    background-color: v.$colorbarras;
-    box-shadow: v.$color-box-transparente;
-
+    @extend %fondo-boton;
 }
 
 .texto {
@@ -64,10 +60,9 @@ span {
 
 nav {
     ul {
-        display: flex;
+        @include v.flex-align;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
         gap: 20px;
 
 
@@ -88,9 +83,8 @@ nav {
 
 /* bloque para los modelos de camisetas*/
 .modelos {
-    display: flex;
+    @include v.flex-align;
     flex-direction: column;
-    align-items: center;
     background-color: rgba(5, 0, 0, 0.498);
     backdrop-filter: blur(16px);
 }
@@ -118,6 +112,7 @@ nav {
 .contenedor img {
     border-radius: 0px 20px 0px 20px;
     box-shadow: v.$color-box-transparente;
+
 }
 
 /*texto de los modelos*/
@@ -138,11 +133,13 @@ nav {
     background: linear-gradient(black, transparent);
     object-fit: cover;
 }
+main {
+    flex: 1;
 
-main img {
-    object-fit: cover;
+    img {
+        object-fit: cover;
+    }
 }
-
 /*modificaciones apartir de px*/
 @media (min-width: 738px) {
     .contenedor {
