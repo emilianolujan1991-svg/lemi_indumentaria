@@ -58,6 +58,10 @@ h1 {
   grid-area: fotos;
 }
 
+.fondo-tarjeta {
+  background-color: black;
+}
+
 /*texto de la descripcion*/
 span {
   color: rgb(213, 205, 205);
@@ -221,6 +225,7 @@ h2 {
   color: rgb(213, 235, 255);
 }
 
+/* prueba para tajetas de productos*/
 .flecha-c {
   background-color: black;
   border-radius: 0 5px;
