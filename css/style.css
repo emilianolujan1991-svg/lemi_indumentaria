@@ -42,6 +42,7 @@ h1 {
 
 .texto {
   color: rgb(228, 225, 225);
+  font-size: 22px;
 }
 
 .logo {
@@ -264,6 +265,7 @@ h2 {
   display: inline-block;
   color: rgb(213, 235, 255);
   text-decoration: none;
+  text-align: center;
   position: relative;
   z-index: 999;
   cursor: pointer;
