@@ -60,6 +60,28 @@ span {
 
 }
 
+.camisetas-descripcion {
+    font-family: v.$letradetalle;
+    color: v.$colorletra2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: v.$colorsecundario;
+    box-shadow: v.$color-box-transparente;
+    border-radius: 0 20px 0 20px;
+    grid-area: texto;
+
+}
+
+.fondo-camiseta{
+        background-color: rgba(5, 0, 0, 0.498);
+    backdrop-filter: blur(16px);
+
+}
+
 
 nav {
     ul {

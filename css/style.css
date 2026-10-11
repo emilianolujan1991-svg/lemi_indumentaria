@@ -87,6 +87,26 @@ span {
   grid-area: texto;
 }
 
+.camisetas-descripcion {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(213, 235, 255);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgba(75, 74, 73, 0.6588235294);
+  box-shadow: 5px 5px 5px black;
+  border-radius: 0 20px 0 20px;
+  grid-area: texto;
+}
+
+.fondo-camiseta {
+  background-color: rgba(5, 0, 0, 0.498);
+  backdrop-filter: blur(16px);
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -194,6 +214,15 @@ footer {
 }
 
 .orden-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.orden-camisetas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
