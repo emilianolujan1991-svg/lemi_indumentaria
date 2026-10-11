@@ -21,7 +21,7 @@ body {
 /* definiciones de variables para colores*/
 /* variable de ipografias */
 /* extend */
-.boton, .seccion {
+.boton, .boton-comprar, .seccion {
   background-color: rgba(97, 96, 95, 0.6588235294);
   box-shadow: 5px 5px 5px black;
 }
@@ -258,6 +258,21 @@ h2 {
 .flecha-c {
   background-color: black;
   border-radius: 0 5px;
+}
+
+.boton-comprar {
+  display: inline-block;
+  color: rgb(213, 235, 255);
+  text-decoration: none;
+  position: relative;
+  z-index: 999;
+  cursor: pointer;
+  border-radius: 0 5px;
+}
+.boton-comprar:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in;
 }
 
 /*# sourceMappingURL=style.css.map */
